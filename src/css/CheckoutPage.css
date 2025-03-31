@@ -1,0 +1,76 @@
+/* CheckoutPage.css */
+
+/* Contenedor general */
+.checkout-container {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Loading centrado */
+  .checkout-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .ant-input-number-handler-wrap {
+    opacity: 1 !important;
+  }  
+  
+  /* Tarjetas de selección de boletos */
+  .ticket-type-card {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Estilo de la tarjeta de resumen */
+  .summary-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+  }
+  
+  /* Líneas de resumen */
+  .summary-line,
+  .summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 8px 0;
+  }
+  
+  .summary-total {
+    font-weight: bold;
+    font-size: 18px;
+    color: #003376;
+  }
+  
+  /* Responsividad adicional */
+  @media (max-width: 768px) {
+    .checkout-container {
+      padding: 16px;
+    }
+  
+    .ticket-type-card .ant-row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .summary-card {
+      margin-top: 24px;
+    }
+  
+    .summary-line,
+    .summary-total {
+      font-size: 15px;
+      padding: 6px 0;
+    }
+  }
+  

@@ -1,0 +1,87 @@
+.layout {
+  min-height: 100vh;
+}
+
+.centered-image-section {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.centered-image {
+  max-width: 30%;
+  height: auto;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) { /* Para pantallas de ancho menor a 768px */
+  .centered-image {
+      max-width: 80%; /* Aumenta el tamaño para que sea más visible */
+  }
+
+
+  @media (max-width: 992px) { /* Para pantallas de ancho menor a 768px */
+    .centered-image {
+        max-width: 70%; /* Aumenta el tamaño para que sea más visible */
+    }
+  }
+
+  .centered-image-section {
+      margin: 16px 0; /* Reduce el margen para móviles */
+  }
+
+  .events-section {
+      padding: 16px; /* Ajusta el padding en dispositivos móviles */
+  }
+}
+
+.events-section {
+  padding: 24px;
+  background-color: #f7f7f7;
+}
+
+.events-header {
+  background-color: #0353bd;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 1fr)); /* 2 columnas en móvil */
+  gap: 16px;
+  justify-content: center;
+  padding: 0 12px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+/* Laptop */
+@media (min-width: 992px) {
+  .events-grid {
+    grid-template-columns: repeat(4, minmax(220px, 1fr));
+  }
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+  .events-grid {
+    grid-template-columns: repeat(5, minmax(220px, 1fr));
+  }
+}
+
+.selection-card {
+  border: none;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}

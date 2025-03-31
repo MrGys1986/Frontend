@@ -1,0 +1,113 @@
+.login-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background-color: #f9fafb;
+  }
+  
+  .form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background-color: #f2f2f2;
+    position: relative;
+    order: 1;
+  }
+  
+  .image-section-login {
+    flex: 1;
+    min-height: 400px;
+    background-image: url("../../public/login.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    order: 2;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    text-align: center;
+  }
+  
+  .image-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .image-description {
+    font-size: 1.5rem;
+    max-width: 420px;
+    line-height: 1.6;
+  }
+  
+  .logo-float {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 170px;
+    z-index: 1;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 440px;
+  }
+  
+  .captcha-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 14px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  /* Responsivo para móvil */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+  
+    .form-section {
+      order: 1;
+      padding: 16px;
+    }
+  
+    .image-section-login {
+      order: 2;
+    }
+  
+    .logo-float {
+      display: block;
+      margin: 0 auto 20px;
+      width: 100px;
+    }
+  
+    .login-card {
+      max-width: 360px;
+      margin: 0 auto;
+    }
+  
+    .image-title {
+      font-size: 2.2rem;
+    }
+  
+    .image-description {
+      font-size: 1.2rem;
+    }
+  }
+  

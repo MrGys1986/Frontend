@@ -1,0 +1,44 @@
+.event-countdown {
+    text-align: center;
+    background-color: #e6f0ff;
+    padding: 24px;
+    border-radius: 16px;
+    margin: 32px auto;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .countdown-title {
+    font-size: 20px;
+    color: #0353bd;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  
+  
+  .event-map {
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 20px 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .info-card {
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    background-color: #fafafa;
+  }
+  
+  .event-actions {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .event-actions button {
+    margin: 8px;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  

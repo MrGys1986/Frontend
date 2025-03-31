@@ -1,0 +1,23 @@
+.profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  
+  /* Para forzar scroll horizontal en la tabla si no cabe */
+  .purchases-table {
+    width: 100%;
+    overflow-x: auto; /* Permite desplazamiento horizontal en móvil */
+  }
+  
+  /* Ajustes en móviles */
+  @media (max-width: 768px) {
+    .profile-card,
+    .purchases-card {
+      margin-bottom: 16px;
+    }
+    .purchases-table {
+      overflow-x: scroll;
+    }
+  }
+  

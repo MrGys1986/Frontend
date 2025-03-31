@@ -1,0 +1,19 @@
+/* Envoltorio del carrusel para tener un fondo #003376 */
+.slider-wrapper {
+    background-color: #003376;
+    padding: 16px 0; /* Espacio opcional arriba/abajo */
+  }
+  
+  .slider-container {
+    margin: 0 auto;
+    max-width: 1200px; /* Ajusta según tu diseño */
+  }
+  
+  .slider-image {
+    width: 100%;
+    max-height: 400px; /* Limita la altura */
+    object-fit: contain; /* Muestra la imagen completa sin recortarla */
+    display: block;
+    margin: 0 auto; /* Centra la imagen dentro del carrusel */
+  }
+  
